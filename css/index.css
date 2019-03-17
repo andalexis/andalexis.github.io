@@ -57,6 +57,13 @@ ul.topnav li.right {float: right;}
   }
 }
 
+@media screen and (max-width: 420px) {
+  .hero-text {
+	  float: none;
+	  padding-top: 200px;
+  }
+}
+
 @media screen and (max-width: 600px) {
   #home {float: none;}
 }
