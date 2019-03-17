@@ -53,7 +53,7 @@ ul.topnav li.right {float: right;}
 @media screen and (max-width: 600px) {
   .hero-text {
 	  float: none;
-	  padding-top: 720px;
+	  padding-top: 700px;
   }
 }
 
@@ -232,9 +232,8 @@ p {
 
 @media screen and (max-width: 600px) {
 	.contpic img {
-		width: 275;
-		height: 30px;
 		overflow: hidden;
+		margin-left: -70px;
 		
 	}
 }
