@@ -232,7 +232,9 @@ p {
 
 @media screen and (max-width: 600px) {
 	.contpic img {
-		margin-left: -90px;
+		width: 275;
+		height: 30px;
 		overflow: hidden;
+		
 	}
 }
