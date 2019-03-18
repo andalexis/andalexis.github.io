@@ -44,7 +44,7 @@ ul.topnav li.right {float: right;}
 #home {
 	
 	background: url("../img/stl_4.jpg") no-repeat;
-	background-attachment: static;
+	background-attachment: fixed;
 	-webkit-background-size: auto;
 	-moz-background-size: 100% auto;
 	-o-background-size: 100% auto;
