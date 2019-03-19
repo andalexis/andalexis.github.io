@@ -1,235 +1,256 @@
-/*----- INDEX CSS -----*/
-
-html,body
-{
-    width: 100%;
-    height: 100%;
-    margin: 0px;
-    padding: 0px;
-    overflow-x: hidden; 
+/*---Nav bar---*/
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: 'Josefin Sans', sans-serif;
+	background-color: #f9ecf2;
+}
+.navbar {
+    font-size: 18px;
+    background-image: linear-gradient(260deg, #2376ae 0%, #c16ecf   100%);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding-bottom: 10px;
+}
+.main-nav {
+    list-style-type: none;
+}
+.nav-links,
+.logo {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.7);
 }
 
-
-/*----- NAV BAR -----*/
-
-ul.topnav {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background: #516085;
-  padding-bottom: 2px;
- 
+.main-nav li {
+    text-align: center;
+    margin: 10px auto;
+}
+.logo {
+    display: inline-block;
+    font-size: 22px;
+    margin-top: 10px;
+    margin-left: 20px;
 }
 
-ul.topnav li {float: left;}
+/*--- nav for desktop---*/
+@media screen and (min-width: 768px) {
+.navbar {
+	display: flex;
+	justify-content: space-between;
+	padding-bottom: 0;
+	height: 70px;
+	align-items: center;
+}
+.main-nav {
+	display: flex;
+	margin-right: 30px;
+	flex-direction: row;
+	justify-content: flex-end;
+}
+.main-nav li {
+	margin: 0;
+}
+.nav-links {
+	margin-left: 40px;
+}
+.logo {
+	margin-top: 0;
+}
+.navbar-toggle {
+   display: none;
+}
+.logo:hover,
+.nav-links:hover {
+	color: rgba(255, 255, 255, 1);
+}
+}
+/*---main content---*/
 
-ul.topnav li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
+* {
+  box-sizing: border-box;
 }
 
-ul.topnav li a:hover:not(.active) {background-color: #111;}
-
-ul.topnav li a.active {background: rgba(255,255,255,0.0);}
-
-ul.topnav li.right {float: right;}
-
-@media screen and (max-width: 600px) {
-  ul.topnav li.right, 
-  ul.topnav li {float: none;}
-}
-
-/*----- HOME & HERO TEXT-----*/
-
-
-#home {
-	
-	background: url("../img/stl_4.jpg") no-repeat;
-	background-attachment: fixed;
-	-webkit-background-size: auto;
-	-moz-background-size: 100% auto;
-	-o-background-size: 100% auto;
-	background-size: cover;
-	
-	display: block;
-	height: 700px;
-	padding-bottom: 250px;
-	font-size: 20px;
-	overflow-x: hidden;
-}
-
-.hero-text {
-  text-align: center;
-  position: relative;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-  font-size: 30px;
-  padding-top: 200px;
-}
-
-.btn {
-	margin-top: 20px;
-}
-
-/*----- ABOUT ME & PORTFOLIO -----*/
-
-/* Create three unequal columns that floats next to each other */
-.column {
-  float: left;
-  padding: 25px;
-}
-
-@media screen and (max-width: 600px) {
-  .column {
-    width: 100%;
-  }
-}
-
-@media screen and (max-width: 992px) {
-  .column {
-    width: 50%;
-  }
-}
-
-/* Left and right column */
-.column.side {
-  width: 25%;
-  
-  
-}
-
-/* Middle column */
-.column.middle {
-  width: 50%;
-  line-height: 1.8;
-  
-  
-}
-
-.row {
-	padding-top: 30px;
-	padding-left: 5%;
-	padding-right: 5%;
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
- 
-}
-
-/* Responsive layout - makes the columns stack on top of each other*/
-@media screen and (max-width: 600px) {
-  .column.side, .column.middle {
-    width: 100%;
-  }
-}
-
-.earth img {
-	width: 100%;
-	height: 270px;
-	
-}
-
-@media screen and (max-width: 600px) {
-	.earth img {
-		height: 350px;
-	}
-}
-
-/* border around portfolio box*/
-.column.side.a {
-	border: 1px solid black;
-	background: #E5E4E2;
-	
-}
-
-ul.sklist li {
-	font-size: 25px;
-	padding-bottom: 15px;
-	font-family: arial
-}
-
-
-/*----- SKILL -----*/
-
-
-#skills {
-	margin-top: 25px;
-	padding-top: 30px;
-	background-color: #FACA93;
-	width: 100%;
-	margin-left: auto;
-	margin-right: auto;
-	text-align: center;
-	border: 2px solid black;
-	
-}
-	
-.row {
-	padding-bottom: 10px;
-	margin-bottom: 50px;
-	
-}
 
 .row::after {
   content: "";
   clear: both;
-  display: grid;
+  display: table;
 }
 
-/* quarter=skill pics */
-.quarter {
-  background-color: #F9F1E9;
+[class*="col-"] {
   float: left;
-  width: 100%;
-  padding-left: 2%;
-  border: .5px solid black;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  position: justify;
+  padding: 15px;
 }
 
-.quarter img {
-	padding: 0px;
-	position: center;
+html {
+  font-family: "Lucida Sans", sans-serif;
+}
+
+.header {
+  background-color: #9933cc;
+  color: #ffffff;
+  padding: 45px;
+  font-size: 35px;
+  text-align: center;
+  line-height: 180%;
+  
+	background: url("../img/stl4.jpg") no-repeat;
+	background-attachment: local;
+	-webkit-background-size: auto;
+	-moz-background-size: 100% auto;
+	-o-background-size: 100% auto;
+	background-size: cover;
+
+	display: block;
+	height: 700px;
+}
+
+@media screen and (min-width: 768px) {
+	.header {
+  background-color: #9933cc;
+  color: #ffffff;
+  padding: 45px;
+  font-size: 35px;
+  text-align: center;
+  line-height: 180%;
+  
+	background: url("../img/stl3.jpg") no-repeat;
+	background-attachment: local;
+	-webkit-background-size: auto;
+	-moz-background-size: 100% auto;
+	-o-background-size: 100% auto;
+	background-size: cover;
+
+	display: block;
+	height: 700px;
+}
+}
+
+/*--- Button links---*/
+.btn {
+	border: none;
+	background-color: #7a0099;
+	color: black;
+	font-size: 25px;
+	padding: 10px;
+	text-decoration: none;
+	border-radius: 10px;
 }
 
 h3 {
-	padding-top: 20px;
-	color: blue;
+	font-size: 30px;
 }
+
+h1 {
+	font-size: 30px;
+	padding: 8px;
+}
+
+h2 {
+	color: #330033;
+	padding-bottom: 8px;
+}
+
+h4 {
+	font-size: 30px;
+	text-align: center;
+}
+
 
 p {
-	padding: 5px;
+	line-height: 2rem;
+	font-size: 17px;
+}
+
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  padding: 12px;
+  margin-bottom: 7px;
+  background-color: #0066ff;
+  color: #ffffff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.menu li:hover {
+  background-color: #0099cc;
+}
+
+.aside {
+  background-color: #33b5e5;
+  padding: 10px;
+  margin-bottom: 20px;
+  color: #ffffff;
+  text-align: center;
+  font-size: 15px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.footer {
+  background-image: linear-gradient(260deg, #2376ae 0%, #c16ecf   100%);
+  color: #ffffff;
+  text-align: center;
+  font-size: 12px;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* For mobile phones: */
+[class*="col-"] {
+  width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+  /* For tablets: */
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+}
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+}
+
+/*--- Image ---*/
+.laptop {
+	padding-left: 0px;
+}
+
+.clearfix {
+  overflow: auto;
+  color: #330033;
+  border-left: 5px solid #006bb3;
+  background-color: #99d6ff;
+}
+
+.img1 {
+  float: right;
 }
 
 
-/*----- CONTACT -----*/
-.contpic img {
-	width:700px;
-	height:275px;
-}
-
-@media screen and (max-width: 600px) {
-	#contact {
-		margin-left: 0px;
-	}
-}
-
-@media screen and (max-width: 600px) {
-	.contpic img {
-		overflow: hidden;
-		margin-left: -70px;
-		
-	}
-}
