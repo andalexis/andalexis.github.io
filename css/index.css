@@ -1,256 +1,297 @@
-/*---Nav bar---*/
-* {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-}
 body {
-    font-family: 'Josefin Sans', sans-serif;
-	background-color: #f9ecf2;
+	background-color: #F4F6F7;
 }
+
+/*--Navbar--- responsive--*/
+
 .navbar {
-    font-size: 18px;
-    background-image: linear-gradient(260deg, #2376ae 0%, #c16ecf   100%);
-    border: 1px solid rgba(0, 0, 0, 0.2);
-    padding-bottom: 10px;
-}
-.main-nav {
-    list-style-type: none;
-}
-.nav-links,
-.logo {
-    text-decoration: none;
-    color: rgba(255, 255, 255, 0.7);
+	background-color: #bfe5f0;
 }
 
-.main-nav li {
-    text-align: center;
-    margin: 10px auto;
-}
-.logo {
-    display: inline-block;
-    font-size: 22px;
-    margin-top: 10px;
-    margin-left: 20px;
+/*--jumbotron for desktop--*/
+.jumbotron {
+	background-image: url("../img/self_11.jpg");
+    background-size: cover;
+	height: 475px;
+	margin-bottom: 0px;
 }
 
-/*--- nav for desktop---*/
-@media screen and (min-width: 768px) {
-.navbar {
-	display: flex;
-	justify-content: space-between;
-	padding-bottom: 0;
-	height: 70px;
-	align-items: center;
-}
-.main-nav {
-	display: flex;
-	margin-right: 30px;
-	flex-direction: row;
-	justify-content: flex-end;
-}
-.main-nav li {
-	margin: 0;
-}
-.nav-links {
-	margin-left: 40px;
-}
-.logo {
-	margin-top: 0;
-}
-.navbar-toggle {
-   display: none;
-}
-.logo:hover,
-.nav-links:hover {
-	color: rgba(255, 255, 255, 1);
-}
-}
-/*---main content---*/
-
-* {
-  box-sizing: border-box;
+/*---jumbotron for mobiles--*/
+@media only screen and (min-width: 600px) {
+	.jumbotron {
+	background-color: #bfe5f0;
+    background-size: cover;
+	height: 475px;
+	margin-bottom: 0px;
+}	
 }
 
 
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-[class*="col-"] {
-  float: left;
-  padding: 15px;
-}
-
-html {
-  font-family: "Lucida Sans", sans-serif;
-}
-
-.header {
-  background-color: #9933cc;
-  color: #ffffff;
-  padding: 45px;
-  font-size: 35px;
-  text-align: center;
-  line-height: 180%;
-  
-	background: url("../img/stl4.jpg") no-repeat;
-	background-attachment: local;
-	-webkit-background-size: auto;
-	-moz-background-size: 100% auto;
-	-o-background-size: 100% auto;
-	background-size: cover;
-
-	display: block;
-	height: 700px;
-}
-
-@media screen and (min-width: 768px) {
-	.header {
-  background-color: #9933cc;
-  color: #ffffff;
-  padding: 45px;
-  font-size: 35px;
-  text-align: center;
-  line-height: 180%;
-  
-	background: url("../img/stl3.jpg") no-repeat;
-	background-attachment: local;
-	-webkit-background-size: auto;
-	-moz-background-size: 100% auto;
-	-o-background-size: 100% auto;
-	background-size: cover;
-
-	display: block;
-	height: 700px;
-}
-}
-
-/*--- Button links---*/
-.btn {
-	border: none;
-	background-color: #7a0099;
-	color: black;
-	font-size: 25px;
-	padding: 10px;
-	text-decoration: none;
-	border-radius: 10px;
-}
-
-h3 {
-	font-size: 30px;
-}
-
-h1 {
-	font-size: 30px;
-	padding: 8px;
-}
+/*---skills---responsive--*/
 
 h2 {
-	color: #330033;
-	padding-bottom: 8px;
+	text-align: center;
+	font-size: 40px;
 }
 
-h4 {
-	font-size: 30px;
+.col-lg-3 {
+	text-align: center;
+	width: 25%;
+	padding: 50px;
+	border: none;
+}
+
+.card {
+	border: none;
+	align-items: center;
+	margin-bottom: 40px;
+	
+}
+
+#change {
 	text-align: center;
 }
 
 
-p {
-	line-height: 2rem;
-	font-size: 17px;
+/*---bio---desktop--*/
+#bio {
+	background: url("../img/stlskyline.jpg");
+	background-size: cover;
+	height: 675px;
+	margin-bottom: 40px;
+	
 }
 
-.menu ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+
+#bio .card-body {
+	background: rgba(180, 150, 160, 0.9);
+	padding-top: 60px;
+	width: 500px;
+	height: 650px;
+	color: white;
+	
 }
 
-.menu li {
-  padding: 12px;
-  margin-bottom: 7px;
-  background-color: #0066ff;
-  color: #ffffff;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+#btnlink {
+	background-color: #fe0159;
+	color: white;
+
+}
+/*---bio for mobiles---*/
+
+/*---my projects---desktop--*/
+ #projects .card-title {
+	font-size: 60px;
+	transform: rotate(270deg);
+	padding-top: 100px;
+	padding-bottom: 200px;
+	margin-bottom: 0px;
+	color: red;
+	
+	
 }
 
-.menu li:hover {
-  background-color: #0099cc;
+#projects.card {
+	margin-bottom: 100px;
+	padding-right: 30px;
+	
 }
 
-.aside {
-  background-color: #33b5e5;
-  padding: 10px;
-  margin-bottom: 20px;
-  color: #ffffff;
-  text-align: center;
-  font-size: 15px;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+/*---contact---*/
+#contact .col-4 {
+	background: #88cc00;
+	text-align: center;
+	padding: 10px;
+	
 }
 
-.footer {
-  background-image: linear-gradient(260deg, #2376ae 0%, #c16ecf   100%);
-  color: #ffffff;
-  text-align: center;
-  font-size: 12px;
-  padding: 20px;
-  margin-top: 20px;
+
+/*---footer---*/
+.container my-5 {
+	float: right;
 }
 
-/* For mobile phones: */
-[class*="col-"] {
-  width: 100%;
+
+/*------------------------------------------------*/
+
+#container
+{
+    height:800px; 
+
 }
 
-@media only screen and (min-width: 600px) {
-  /* For tablets: */
-  .col-s-1 {width: 8.33%;}
-  .col-s-2 {width: 16.66%;}
-  .col-s-3 {width: 25%;}
-  .col-s-4 {width: 33.33%;}
-  .col-s-5 {width: 41.66%;}
-  .col-s-6 {width: 50%;}
-  .col-s-7 {width: 58.33%;}
-  .col-s-8 {width: 66.66%;}
-  .col-s-9 {width: 75%;}
-  .col-s-10 {width: 83.33%;}
-  .col-s-11 {width: 91.66%;}
-  .col-s-12 {width: 100%;}
-}
-@media only screen and (min-width: 768px) {
-  /* For desktop: */
-  .col-1 {width: 8.33%;}
-  .col-2 {width: 16.66%;}
-  .col-3 {width: 25%;}
-  .col-4 {width: 33.33%;}
-  .col-5 {width: 41.66%;}
-  .col-6 {width: 50%;}
-  .col-7 {width: 58.33%;}
-  .col-8 {width: 66.66%;}
-  .col-9 {width: 75%;}
-  .col-10 {width: 83.33%;}
-  .col-11 {width: 91.66%;}
-  .col-12 {width: 100%;}
+#container DIV
+{ 
+    margin:50px; 
+    padding:50px; 
+    background-color: blue; 
 }
 
-/*--- Image ---*/
-.laptop {
+.hideme
+{
+    opacity:0;
+}
+
+/*---------------------------skill bars-----------------------*/
+
+
+#myProgress {
+  width: 60%;
+  background-color: #F9EBEA;
+  float: center;
+  border: 1px solid #EDBB99;
+}
+
+#myBar1 {
+  width: 1%;
+  height: 25px;
+  background-color: #8115FF;
+}
+
+#myBar2 {
+  width: 1%;
+  height: 25px;
+  background-color: #1CBDC6;
+}
+
+#myBar3 {
+  width: 1%;
+  height: 25px;
+  background-color: #33D50F;
+}
+
+#myBar4 {
+  width: 1%;
+  height: 25px;
+  background-color: #FF4115;
+}
+
+h4 {
+	text-align: left;
+}
+
+h3 {
+	text-align: center;
+	text-decoration: underline;
+	font-size: 35px;
+}
+
+#bar {
 	padding-left: 0px;
+	padding-top: 70px;
+	margin-bottom: 75px;
 }
 
-.clearfix {
-  overflow: auto;
-  color: #330033;
-  border-left: 5px solid #006bb3;
-  background-color: #99d6ff;
+#bar .textbox {
+	float: right;
+	width: 350px;
+	height: 450px;
+	padding: 5px;
+	padding-left: 10px;
+	background: rgba(255, 255, 255, 0.8);
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
-.img1 {
-  float: right;
+.button {
+	margin-top: 5px;
+	margin-bottom: 25px;
+	border: none;
+	padding: 5px 10px;
+	background-color: #CCE5EB;
+}
+
+.button:hover {
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
 
+/*------------------------------------*/
+#big-circle {
+	margin-left: 875px;
+	margin-top: 200px;
+}
+
+.circle {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    background-color: red;
+    display: inline-block;
+    position: absolute;
+	
+}
+
+.circle.big {
+    width: 150px;
+    height: 150px;
+    background-color: blue;
+    margin: 100px;
+	float: right;
+}
+
+.one {
+    left: -45px;
+    top: -15px;
+}
+
+.two {
+    top: -60px;
+    left: 50px;
+}
+
+.three {
+    right: -45px;
+    top: -15px;
+}
+
+
+.four {
+    left: -45px;
+    bottom: -15px;
+}
+
+.five {
+    bottom: -60px;
+    left: 50px;
+}
+
+.six {
+    right: -45px;
+    bottom: -15px;
+}
+
+/*-------typewriter effect--------------*/
+.typewriter h5 {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  font-size: 90px;
+  border-right: transparent; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .13em; /* Adjust as needed */
+  animation: 
+    typing 3.0s steps(50, end),
+    blink-caret .75s step-end 8;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: orange }
+  50% { border-color: transparent }
+}
+
+/*------------------------------*/
+.footer {
+  
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: #efefef;
+  text-align: center;
+}
