@@ -1,0 +1,27 @@
+body {
+	background-color: #F4F6F7;
+}
+
+h1 {
+	text-align: center;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	color: blue;
+}
+
+p {
+	font-size: 20px;
+}
+
+button {
+	background-color: yellow;
+	color: blue;
+	margin-top: 30px;
+	height: 50px;
+	margin-bottom: 100px;
+	font-size: 30px;
+	
+}
+
+
+
