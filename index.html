@@ -286,12 +286,72 @@ function move4() {
   var width = 1;
   var id = setInterval(frame, 10);
   function frame() {
-    if (width >= 20) {
+    if (width >= 94) {
+      clearInterval(id);
+    } else {
+      width++; 
+      elem.style.width = width + '%'; 
+	  document.getElementById("change").innerHTML = "<br><h2>HTML & CSS</h2><br>This entire webpage was coded using extensive html and css!<br>Hundreds of lines of code were created, the hexadecimal colors were handpicked,<br>and the layout of this page is all my custom css!";
+    }
+  }
+}
+
+function move5() {
+  var elem = document.getElementById("myBar5");   
+  var width = 1;
+  var id = setInterval(frame, 10);
+  function frame() {
+    if (width >= 65) {
+      clearInterval(id);
+    } else {
+      width++; 
+      elem.style.width = width + '%'; 
+	  document.getElementById("change").innerHTML = "SQL</h2><br>Structured Query Language<br>Basic knowledge of statements, joins, data manipulaion, and synax";
+    }
+  }
+}
+
+function move6() {
+  var elem = document.getElementById("myBar6");   
+  var width = 1;
+  var id = setInterval(frame, 10);
+  function frame() {
+    if (width >= 50) {
+      clearInterval(id);
+    } else {
+      width++; 
+      elem.style.width = width + '%'; 
+	  document.getElementById("change").innerHTML = "<br><h2>Javascript</h2><br>Basic knowlegde of Javascript variables and functions<br>This client-side language really intrigues me and I am currently working on deepening this skill through readings and LOTS of study!<br>I hope to make this language one of my primary environment<br>Theres Javascript sprinkled throughout this page!";
+    }
+  }
+}
+
+function move7() {
+  var elem = document.getElementById("myBar7");   
+  var width = 1;
+  var id = setInterval(frame, 10);
+  function frame() {
+    if (width >= 60) {
       clearInterval(id);
     } else {
       width++; 
       elem.style.width = width + '%'; 
 	  document.getElementById("change").innerHTML = "<br><h2>Coming Soon!</h2><br>I'm still a student. I'm learning new skills everyday.<br>Soon to be added: Javascript, SQL, Python, and more!";
+    }
+  }
+}
+
+function move8() {
+  var elem = document.getElementById("myBar8");   
+  var width = 1;
+  var id = setInterval(frame, 10);
+  function frame() {
+    if (width >= 20) {
+      clearInterval(id);
+    } else {
+      width++; 
+      elem.style.width = width + '%'; 
+	  document.getElementById("change").innerHTML = "<br><h2>Coming Soon!</h2><br>I'm still a student. I'm learning new skills everyday.<br>Soon to be added: C# and .NET Framework and more!";
     }
   }
 }

@@ -140,7 +140,6 @@ h2 {
   background-color: #F9EBEA;
   float: center;
 	border: 1px solid #EDBB99;
-	height: 1000px;
 }
 
 #myBar1 {
@@ -180,6 +179,12 @@ h2 {
 }
 
 #myBar7 {
+  width: 1%;
+  height: 25px;
+  background-color: #FF4115;
+}
+
+#myBar8 {
   width: 1%;
   height: 25px;
   background-color: #FF4115;
