@@ -301,7 +301,7 @@ function move5() {
   var width = 1;
   var id = setInterval(frame, 10);
   function frame() {
-    if (width >= 65) {
+    if (width >= 63) {
       clearInterval(id);
     } else {
       width++; 
@@ -331,12 +331,12 @@ function move7() {
   var width = 1;
   var id = setInterval(frame, 10);
   function frame() {
-    if (width >= 60) {
+    if (width >= 69) {
       clearInterval(id);
     } else {
       width++; 
       elem.style.width = width + '%'; 
-	  document.getElementById("change").innerHTML = "<br><h2>Coming Soon!</h2><br>I'm still a student. I'm learning new skills everyday.<br>Soon to be added: Javascript, SQL, Python, and more!";
+	  document.getElementById("change").innerHTML = "<br><h2>Python</h2><br>Solid understanding of functions, methods, and file handling<br>I am working on an upcoming python project so stay tuned!";
     }
   }
 }
