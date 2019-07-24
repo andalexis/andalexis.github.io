@@ -1,0 +1,17 @@
+body {
+	background-color: #F4F6F7;
+}
+
+/*--Navbar--- responsive--*/
+
+.navbar {
+	background-color: #bfe5f0;
+}
+
+/*--jumbotron for desktop--*/
+.jumbotron {
+	background-image: url("../whiteligt.jpg");
+  background-size: cover;
+	height: 205px;
+	margin-bottom: 0px;
+}
