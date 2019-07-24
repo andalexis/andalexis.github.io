@@ -11,8 +11,8 @@ body {
 /*--jumbotron for desktop--*/
 .jumbotron {
 	background-image: url("../whiteligt.jpg");
-    background-size: cover;
-	height: 475px;
+  background-size: cover;
+	height: 205px;
 	margin-bottom: 0px;
 }
 
