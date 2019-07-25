@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
@@ -7,357 +6,154 @@
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-	<link rel="stylesheet" href="css/index.css">
+	    <link rel="stylesheet" href="css/index_css.css">
 	</head>
 	<body>
-	
-		<!---Nav bar--->
-		<nav class="navbar navbar-expand-lg navbar-light bg-transparent">
-        <a class="navbar-brand" href="#"></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#bio">Bio</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#bar">Skills</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#projects">Projects</a>
-                </li>
-            </ul>
-        </div>
+
+  <!---Nav bar--->
+    <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+            <a class="navbar-brand" href="#"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#bio">Bio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills_heading">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                </ul>
+            </div>
     </nav>
 	
-		<!---jumbotron--->
-		
-		<div class="jumbotron jumbotron-fluid">
-        <div class="container">
-	          <h1 class="display-4">Hello, I am</h1>
-                <div class="typewriter">
-                    <h5>Alexis Anderson</h5>
+        <!---jumbotron--->    
+        
+        <div class="jumbotron">
+                <div class="container">
+                      <h1 class="jumbo_text">Hello, I am</h1>
+                        <div class="typewriter">
+                            <h5>Alexis Anderson</h5>
+                        </div>
+                        <h1 class="jumbo_desc">A junior software developer.</h1>
+                        <img src="img/me.jpg" class="profile">
+                    </div>
+            </div>
+        
+        <!---Skills---->
+        <div id="skills_heading" class="container">
+           <div class="container"> 
+                <p>
+                    <span class="underline">My Skills</span>
+                </p>
+                    <h5>"Learning how to learn is life's most important skill."</h5>
+                    <h6>-Tony Buzan</h6>
                 </div>
-                <p class="lead">A junior software developer.</p>
         </div>
-    </div>
-	
-	<!---Skills--->
-	<div class="row">
-	
-		<div class="container" id="bar">	
-	
-			<div class="textbox">
-			<h3>My Skills</h3>
-			<p id="change"><br>01001000 01100101 01101100 01101100 01101111 00100000 01010111 01101111 01110010 01101100 01100100 00100001.
-			<br><br>Or simply put: &nbsp<strong>Hello World!</strong>
-			<br><br><br><br><br>
-			Click a progress button</p>
-			</div>
-	
-		<h4>Communication</h4>
-			<div id="myProgress">
-				<div id="myBar1"></div>
-			</div>
-			<button class="button" onclick="move1()">See Progress</button>
-			
-
-		<h4>Version Control</h4>
-			<div id="myProgress">
-				<div id="myBar2"></div>
-			</div>
-			<button class="button" onclick="move2()">See Progress</button> 
-
-		<h4>Logical Thinking</h4>
-			<div id="myProgress">
-				<div id="myBar3"></div>
-			</div>
-			<button class="button" onclick="move3()">See Progress</button> 
-	
-		<h4>HTML & CSS</h4>
-			<div id="myProgress">
-				<div id="myBar4"></div>
-			</div>
-			<button class="button" onclick="move4()">See Progress</button>
-
-		<h4>SQL</h4>
-			<div id="myProgress">
-				<div id="myBar5"></div>
-			</div>
-			<button class="button" onclick="move5()">See Progress</button>
-			
-		<h4>JavaScript</h4>
-			<div id="myProgress">
-				<div id="myBar6"></div>
-			</div>
-			<button class="button" onclick="move6()">See Progress</button>
-		
-		<h4>Python</h4>
-			<div id="myProgress">
-				<div id="myBar7"></div>
-			</div>
-			<button class="button" onclick="move7()">See Progress</button>
-
-		<h4>Coming Soon!</h4>
-			<div id="myProgress">
-				<div id="myBar8"></div>
-			</div>
-			<button class="button" onclick="move8()">See Progress</button>
-	
-	
-		</div>
-	</div>
-		
-		<!------------Skills-------->
-		
-		<h2>My Projects</h2>
-		<div class="container" id="projects">
-		 <div class="row">
-    <div class="col-lg-3 col-md-3 col-sm-6">
-  
-		<div class="card" style="width: 250px;">
-		<img src="img/sql.png" class="card-img-top" style="width: 100px"  alt="...">
-		<div class="card-body">
-		<p class="card-text">SQL</p>
-		<p>I made a mock library database</p>
-		<a href="project1.html" class="btn btn-primary">Check it out</a>
-		
-		</div>
-		</div>
-	  
-    </div>
-    <div class="col-lg-3 col-md-3 col-sm-6">
-   
-		<div class="card" style="width: 250px;">
-		<img src="img/soon.jpg" class="card-img-top" style="width: 100px" alt="...">
-		<div class="card-body">
-		
-		<p class="card-text">I'm a student. This project is a work in progress...</p>
-		<a href="#" class="btn btn-primary">Not up yet</a>
-		</div>
-		</div>
-    </div>
-	<div class="col-lg-3 col-md-3 col-sm-6">
-   
-		<div class="card" style="width: 250px;">
-		<img src="img/soon.jpg" class="card-img-top" style="width: 100px" alt="...">
-		<div class="card-body">
-		
-		<p class="card-text">I'm a student. This project is a work in progress...</p>
-		<a href="#" class="btn btn-primary">Not up yet</a>
-		</div>
-		</div>
-    </div>
-	<div class="col-lg-3 col-md-3 col-sm-6">
-     
-		<div class="card" style="width: 250px">
-		<img src="img/soon.jpg" class="card-img-top" style="width: 100px" alt="...">
-		<div class="card-body">
-		
-		<p class="card-text">I'm a student. This project is a work in progress...</p>
-		<a href="#" class="btn btn-primary">Not up yet</a>
-		</div>
-		</div>
-    </div>
-		
-</div>
-</div>
-		<!---bio--->
-	<div id="bio">
-		<div class="container">
-			<div class="card-body">
-				<div class="hideme"><h2>About Me</h2><div>
-					<p>Welcome! I'm a 20 year old remote computer programming student at The Tech Academy and I will be graduating from the bootcamp mid August 2019. </p>
-					<p>Everyday I'm learning more and more, and soon will have the skills of a junior software developer. </p>
-					<p>Check out my LinkedIn and Github accounts:
-				<div><a class="btn" href="https://linkedin.com/in/alexis-anderson-1aaabb17b" role="button" id="btnlink" >LinkedIn</a></div><br>
-				<div><a class="btn" href="https://github.com/andalexis" role="button" id="btnlink" >Github</a></div>
-					<h2>Let's Connect</h2>
-					<p><i class="fa fa-map-marker w3-text-teal w3-xlarge"></i>  St. Louis, US</p>
-					<p><i class="fa fa-phone w3-text-teal w3-xlarge"></i>  618.401.9456 </p>
-					<p><i class="fa fa-envelope-o w3-text-teal w3-xlarge"></i>  a.anderson4110@gmail.com</p>
-					
-					
-					</div> 
-				</div>
-			</div>
-		</div>
-	</div>
-<!---------------------contact------------------->
-		
 
 
+        <div id="skills_section" class="container">
+            <div class="grid-container">
+                <div class="item1">
+                    <img src="img/html.jpeg" alt="html/css" width="120" height="120">
+                    <h3 style="margin-top: 10px">HTML/CSS</h3>
+                    <p class="desc">Proficient in building and structuring webpage layouts. <br>Able to detail with CSS and use Bootstrap</p>
+                </div>
+                <div class="item2">
+                    <img src="img/python.jpeg" alt="html/css" width="120" height="120">
+                    <h3 style="margin-top: 10px">Python</h3>
+                    <p class="desc">Solid understanding of functions, methods, and file handling.<br>I also have some experience with django</p>
+                </div>
+                <div class="item3">
+                    <img src="img/js.jpeg" alt="html/css" width="120" height="120">
+                    <h3 style="margin-top: 10px">Javascript</h3>
+                    <p class="desc">Basic knowledge of Javascript variables and functions<br>Familiar with using JQuery</p>
+                </div> 
+                <div class="item4">
+                    <img src="img/sql.jpeg" alt="html/css" width="120" height="120">
+                    <h3 style="margin-top: 10px">SQL Server</h3>
+                    <p class="desc">Structured Query Language<br>Basic knowledge of statements, joins, data manipulation, and syntax</p>
+                </div>
+                <div class="item5">
+                    <img src="img/linked.jpeg" alt="html/css" width="120" height="120">
+                    <h3 style="margin-top: 10px">SQL Server</h3>
+                    <p class="desc">Structured Query Language<br>Basic knowledge of statements, joins, data manipulation, and syntax</p>
+                </div>
+                <div class="item6">
+                    <img src="img/gitcat.jpeg" alt="html/css" width="120" height="120">
+                    <h3 style="margin-top: 10px">Version Control</h3>
+                    <p class="desc">Organized and experienced with handling code revisions.<br>Regluar Github user</p>
+                </div>
+                <div class="item7">
+                    <img src="img/soon.jpeg" alt="coming soon" width="120" height="120">
+                    <h3 style="margin-top: 10px"></h3>
+                    <p class="desc">I am still a student and <br>always learning</p>
+                </div>
+                <div class="item8">
+                    <img src="img/soon.jpeg" alt="coming soon" width="120" height="120">
+                    <h3 style="margin-top: 10px"></h3>
+                    <p class="desc">More skills being learned <br>right now!</p>
+                </div>
 
-<!---------------------->
-<div class="footer"> andalexis.github.io </div>
+            </div>        
+        </div>
+        <!--projects-->
+        <div id="projects" class="header">
+            <div class="header">
+                <p><span class="underline2">My Projects</span></p>
+                    <div class="box">
+                        <img src="img/shelf.jpg" width="230" align="left" height="230">
+                        <p>This is my SQL Server Management project. <br>I created a mock library database system and its corresponding database diagram. This project showcases my ability to utilize sql statements and syntax.<br> <br><a href="C:\Users\Student\Documents\GitHub\andalexis.github.io\project1.html">Click Here</a> to see how my project diagram.</p>
+
+                    </div>
+                    <div class="box">
+                        <img src="img/pizza2.jpg" width="280" align="left" height="230">
+                        <p><br>This is my Javascript Pizza Drill project. <br>I created an online pizza ordering form that allows the user to customize their order with several toppings and sauces to choose from. The form tallies up the cost of the order. <br><br> <a href="file:///C:/Users/Student/Documents/GitHub/The_Tech_Academy_Basic_JavaScript_projects/Pizza_Project/pizza_drill_tutorial.html">Click Here</a> to try it out </p>
+
+                    </div>
+            </div>
+        </div>
+        <img src="img/whitelight1.jpg" width="100%">
+        <!----contact-->
+        <div id="bio">
+                <div class="container">
+                    <div class="card-body">
+                        <div class="hideme"><h2>About Me</h2><div>
+                            <p>Welcome! I'm a 20 year old remote computer programming student at The Tech Academy and I will be graduating from the bootcamp mid late September 2019. </p>
+                            <p>Everyday I'm learning more and more, and soon will have the skills of a junior software developer. </p>
+                            <p>Check out my LinkedIn and Github accounts:
+                        <div><a class="btn" href="https://linkedin.com/in/alexis-anderson-1aaabb17b" role="button" id="btnlink" >LinkedIn</a></div><br>
+                        <div><a class="btn" href="https://github.com/andalexis" role="button" id="btnlink" >Github</a></div>
+                            <h2>Let's Connect</h2>
+                            <p><i class="fa fa-map-marker w3-text-teal w3-xlarge"></i>  St. Louis, US</p>
+                            <p><i class="fa fa-phone w3-text-teal w3-xlarge"></i>  618.401.9456 </p>
+                            <p><i class="fa fa-envelope-o w3-text-teal w3-xlarge"></i>  a.anderson4110@gmail.com</p>
+                            
+                            
+                            </div> 
+                        </div>
+                    </div>
+                    <img src="img/funny.jpg" class="comic">
+                </div>
+            </div>
+
+            <div class="footer"> andalexis.github.io </div>
 
 
-<!-- Optional JavaScript -->
- 
-
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-	<script src="https://js.cx/libs/animate.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-
-
-<script>
-$(document).ready(function() {
-    
-    /* Every time the window is scrolled ... */
-    $(window).scroll( function(){
-    
-        /* Check the location of each desired element */
-        $('.hideme').each( function(i){
-            
-            var bottom_of_object = $(this).offset().top + $(this).outerHeight();
-            var bottom_of_window = $(window).scrollTop() + $(window).height();
-            
-            /* If the object is completely visible in the window, fade it it */
-            if( bottom_of_window > bottom_of_object ){
+          
                 
-                $(this).animate({'opacity':'1'},500);
-                    
-            }
-            
-        }); 
-    
-    });
-    
-});
-   
- function move1() {
-  var elem = document.getElementById("myBar1");   
-  var width = 1;
-  var id = setInterval(frame, 10);
-  function frame() {
-    if (width >= 100) {
-      clearInterval(id);
-    } else {
-      width++; 
-      elem.style.width = width + '%'; 
-	  document.getElementById("change").innerHTML = "<br><h2>Communication!</h2><br>- Effective listener<br>- Empathetic and Open<br>-Comfortable with public speaking";
-    }
-  }
-}
+        
+        
 
-function move2() {
-  var elem = document.getElementById("myBar2");   
-  var width = 1;
-  var id = setInterval(frame, 10);
-  function frame() {
-    if (width >= 75) {
-      clearInterval(id);
-    } else {
-      width++; 
-      elem.style.width = width + '%'; 
-	  document.getElementById("change").innerHTML = "<br><h2>Version Control!</h2><br>I'm organized and experienced with Github. <br><br> No more nonsense files on my desktop like <br>myProject_final_final2_FINAL";
-    }
-  }
-}
 
-function move3() {
-  var elem = document.getElementById("myBar3");   
-  var width = 1;
-  var id = setInterval(frame, 10);
-  function frame() {
-    if (width >= 85) {
-      clearInterval(id);
-    } else {
-      width++; 
-      elem.style.width = width + '%'; 
-	  document.getElementById("change").innerHTML = "<br><h2>Logical Thinking!</h2><br> Skilled at evaluating options and generating solutions with an open mind";
-    }
-  }
-}
 
-function move4() {
-  var elem = document.getElementById("myBar4");   
-  var width = 1;
-  var id = setInterval(frame, 10);
-  function frame() {
-    if (width >= 94) {
-      clearInterval(id);
-    } else {
-      width++; 
-      elem.style.width = width + '%'; 
-	  document.getElementById("change").innerHTML = "<br><h2>HTML & CSS</h2><br>This entire webpage was coded using extensive html and css!<br>Hundreds of lines of code were created, the hexadecimal colors were handpicked,<br>and the layout of this page is all my custom css!";
-    }
-  }
-}
 
-function move5() {
-  var elem = document.getElementById("myBar5");   
-  var width = 1;
-  var id = setInterval(frame, 10);
-  function frame() {
-    if (width >= 63) {
-      clearInterval(id);
-    } else {
-      width++; 
-      elem.style.width = width + '%'; 
-	  document.getElementById("change").innerHTML = "SQL</h2><br>Structured Query Language<br>Basic knowledge of statements, joins, data manipulaion, and synax";
-    }
-  }
-}
-
-function move6() {
-  var elem = document.getElementById("myBar6");   
-  var width = 1;
-  var id = setInterval(frame, 10);
-  function frame() {
-    if (width >= 50) {
-      clearInterval(id);
-    } else {
-      width++; 
-      elem.style.width = width + '%'; 
-	  document.getElementById("change").innerHTML = "<br><h2>Javascript</h2><br>Basic knowlegde of Javascript variables and functions<br>This client-side language really intrigues me and I am currently working on deepening this skill through readings and LOTS of study!<br>I hope to make this language one of my primary environment<br>Theres Javascript sprinkled throughout this page!";
-    }
-  }
-}
-
-function move7() {
-  var elem = document.getElementById("myBar7");   
-  var width = 1;
-  var id = setInterval(frame, 10);
-  function frame() {
-    if (width >= 69) {
-      clearInterval(id);
-    } else {
-      width++; 
-      elem.style.width = width + '%'; 
-	  document.getElementById("change").innerHTML = "<br><h2>Python</h2><br>Solid understanding of functions, methods, and file handling<br>I am working on an upcoming python project so stay tuned!";
-    }
-  }
-}
-
-function move8() {
-  var elem = document.getElementById("myBar8");   
-  var width = 1;
-  var id = setInterval(frame, 10);
-  function frame() {
-    if (width >= 20) {
-      clearInterval(id);
-    } else {
-      width++; 
-      elem.style.width = width + '%'; 
-	  document.getElementById("change").innerHTML = "<br><h2>Coming Soon!</h2><br>I'm still a student. I'm learning new skills everyday.<br>Soon to be added: C# and .NET Framework and more!";
-    }
-  }
-}
-
-$(document).ready(function(){
-    $('[data-toggle="popover"]').popover();   
-});
-
-</script>
-
-	</body>
-</html>
+    </body>
+    </html>
