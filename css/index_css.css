@@ -17,9 +17,9 @@ body {
 
 img.profile {
     margin-left: 790px;
-    height: 280px;
-    border-radius: 50%;
-    margin-top: -90px;
+    height: 330px;
+    border-radius: 70%;
+    margin-top: -140px;
 }
 /*-------typewriter effect--------------*/
 .typewriter h5 {
