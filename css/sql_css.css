@@ -1,10 +1,12 @@
-﻿img.diagram {
+﻿body {
+    background-color: white;
+}
+
+img.diagram {
     margin-left: 50%;
     height: 600px;
-
+    background-color: white;
 }
 
-body {
-    background-color: whitesmoke;
-}
+
 
