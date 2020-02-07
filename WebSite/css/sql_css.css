@@ -1,0 +1,57 @@
+﻿body {
+    background-color: gainsboro;
+}
+
+/*#diagram {
+    height: 750px;
+    margin-top: 15px;
+    margin-left: 30px;
+    
+}
+
+
+
+.container-fluid {
+    background-repeat: no-repeat;
+    background-image: url("../img/bookstack.jpg");
+    background-color: #eae8be;
+    background-position: right;
+    height: 830px;
+    margin-top: -80px;
+}*/
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 10px;
+    background-color: white;
+    padding: 3px;
+}
+
+.grid-container > div {
+        background-color: rgba(255, 255, 255, 0.8);
+        text-align: center;
+        padding: 20px 0;
+        font-size: 30px;
+}
+
+.item1 {
+    grid-row: 1;
+    width: 550px;
+    background-image: url("../img/bookstack.jpg");
+    height: 730px;
+    background-repeat: no-repeat;
+    
+}
+
+.item2 {
+    grid-row: 1;
+    width: 550px;
+    height: 730px;
+    background-repeat: no-repeat;
+}
+
+.img.item2 {
+    height: 400px;
+}
+
